@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Rubric">
+  <rect x="1" y="1" width="30" height="30" rx="4" fill="#F5F1E8" stroke="#16130F" stroke-width="2"/>
+  <!-- rubric grid: two columns, three rows -->
+  <line x1="16" y1="4" x2="16" y2="28" stroke="#16130F" stroke-width="1.4"/>
+  <line x1="4" y1="12" x2="28" y2="12" stroke="#16130F" stroke-width="1.4"/>
+  <line x1="4" y1="20" x2="28" y2="20" stroke="#16130F" stroke-width="1.4"/>
+  <!-- the passing cell, marked with the editor's red check -->
+  <path d="M6.5 8.6 L9 11 L13.6 5.6" fill="none" stroke="#E4491C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

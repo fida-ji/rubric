@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    /* faint ruled-paper texture: a single hairline baseline grid, very subtle */
+    background-image: linear-gradient(to bottom, rgba(34, 30, 23, 0.035) 1px, transparent 1px);
+    background-size: 100% 2.25rem;
+  }
+  ::selection {
+    background: #E4491C;
+    color: #FBF8F1;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif text-ink;
+    font-feature-settings: "liga" 1, "onum" 1;
+  }
+  a {
+    @apply text-structure underline decoration-structure/30 underline-offset-2;
+  }
+  a:hover {
+    @apply decoration-structure;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-[92%] max-w-page;
+  }
+  .rule {
+    @apply border-ink/15;
+  }
+  .card {
+    @apply border border-ink/15 bg-paper-raised rounded;
+  }
+  .mono {
+    @apply font-mono text-[0.85em] tracking-tight;
+  }
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.18em] text-ink-faint;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded border px-4 py-2 font-sans text-sm font-medium
+           transition-colors disabled:cursor-not-allowed disabled:opacity-50 no-underline;
+  }
+  .btn-primary {
+    @apply btn border-vermilion bg-vermilion text-paper-raised hover:bg-vermilion-deep hover:border-vermilion-deep;
+  }
+  .btn-ghost {
+    @apply btn border-ink/25 bg-transparent text-ink hover:bg-ink/5;
+  }
+  .field-label {
+    @apply eyebrow mb-1 block;
+  }
+  .field {
+    @apply w-full rounded border border-ink/20 bg-paper-raised px-3 py-2 font-sans text-sm text-ink
+           placeholder:text-ink-faint/70 focus:border-vermilion focus:outline-none;
+  }
+  .tag {
+    @apply inline-flex items-center gap-1.5 rounded-sm border px-2 py-0.5 font-mono text-xs;
+  }
+}
