@@ -1,0 +1,19 @@
+# Netlify configuration for Rubric.
+# Build the frontend in app/ and publish its static output.
+# No secrets belong here. Set VITE_CONTRACT_ADDRESS as a Site environment
+# variable if you want to override the address baked into the build; otherwise
+# the deployed contract address in app/src/config.ts is used automatically.
+
+[build]
+  base = "app"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Single-page app: serve index.html for client-side routes.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
