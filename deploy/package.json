@@ -1,0 +1,14 @@
+{
+  "name": "rubric-deploy",
+  "private": true,
+  "type": "module",
+  "description": "Deploy and seed the Rubric contract on GenLayer Testnet Bradbury.",
+  "scripts": {
+    "deploy": "node deploy.mjs",
+    "seed": "node seed.mjs"
+  },
+  "dependencies": {
+    "dotenv": "16.4.7",
+    "genlayer-js": "1.1.8"
+  }
+}
