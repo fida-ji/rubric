@@ -1,0 +1,4 @@
+# GenLayer contract toolchain (Python 3.12+).
+# Set up:  python3.12 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
+genvm-linter==0.11.0   # provides `genvm-lint` (AST safety + SDK validation)
+genlayer-test==0.29.2  # provides pytest direct-mode fixtures, `gltest`, and `glsim`

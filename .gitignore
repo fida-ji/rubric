@@ -1,0 +1,24 @@
+# --- secrets ---
+.env
+.env.*
+!.env.example
+
+# --- python ---
+.venv*
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# --- node / frontend ---
+node_modules/
+dist/
+build/
+
+# --- build artifacts / caches ---
+artifacts/
+cache/
+.netlify/
+.firebase/
+
+# --- logs ---
+*.log
