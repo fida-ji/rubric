@@ -8,6 +8,7 @@ independent AI validators grades the deliverable against the acceptance criteria
 consensus verdict releases the payment, splits it, or refunds it. No platform, arbiter, or
 single model decides the outcome.
 
+- **Live app:** [rubric-escrow.web.app](https://rubric-escrow.web.app)
 - **Source:** [github.com/fida-ji/rubric](https://github.com/fida-ji/rubric)
 - **Live contract (Testnet Bradbury):**
   [`0x5688061Df3b231cdF3D4703b8D9cC7234723D2A8`](https://explorer-bradbury.genlayer.com/address/0x5688061Df3b231cdF3D4703b8D9cC7234723D2A8)
