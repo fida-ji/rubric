@@ -1,5 +1,6 @@
+import { Github } from "lucide-react";
 import { Mark } from "./Mark";
-import { CONTRACT_ADDRESS, BRADBURY, addrUrl } from "../config";
+import { CONTRACT_ADDRESS, BRADBURY, REPO_URL, addrUrl } from "../config";
 import { shortAddr } from "../lib/format";
 
 export function Footer() {
@@ -55,6 +56,15 @@ export function Footer() {
           <p className="font-mono text-xs text-ink-faint">
             {BRADBURY.chainName} · chain id {BRADBURY.chainIdDec}
           </p>
+          <a
+            href={REPO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-1.5 font-mono text-xs text-ink-faint no-underline hover:text-ink"
+          >
+            <Github size={13} />
+            github.com/fida-ji/rubric
+          </a>
           <p className="font-mono text-xs text-ink-faint">Testnet only. GEN has no monetary value.</p>
         </div>
       </div>

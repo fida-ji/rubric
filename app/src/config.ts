@@ -23,6 +23,9 @@ export const BRADBURY = {
 
 export const FAUCET_URL = "https://testnet-faucet.genlayer.foundation";
 
+// Source code repository.
+export const REPO_URL = "https://github.com/fida-ji/rubric";
+
 export const txUrl = (hash: string) => `${BRADBURY.explorer}/tx/${hash}`;
 export const addrUrl = (address: string) => `${BRADBURY.explorer}/address/${address}`;
 

@@ -1,6 +1,7 @@
-import { Wallet, Power, AlertTriangle } from "lucide-react";
+import { Wallet, Power, AlertTriangle, Github } from "lucide-react";
 import { Wordmark } from "./Mark";
 import { shortAddr } from "../lib/format";
+import { REPO_URL } from "../config";
 import type { WalletState } from "../lib/wallet";
 
 const NAV = [
@@ -33,6 +34,16 @@ export function Header({ wallet }: { wallet: WalletState }) {
         </nav>
 
         <div className="flex items-center gap-2">
+          <a
+            href={REPO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-ghost"
+            title="Source code on GitHub"
+            aria-label="Source code on GitHub"
+          >
+            <Github size={15} />
+          </a>
           {address && !onBradbury && (
             <button onClick={switchToBradbury} className="btn-ghost border-partial/50 text-partial">
               <AlertTriangle size={14} />
